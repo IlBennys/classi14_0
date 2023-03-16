@@ -5,6 +5,7 @@ public class Carrello {
     private Articolo[] elencoArticoli;
     private double totaleCostoArticoli;
 
+    
     public Cliente getCliente() {
 	return cliente;
     }
@@ -28,4 +29,5 @@ public class Carrello {
     public void setTotaleCostoArticoli(double totaleCostoArticoli) {
 	this.totaleCostoArticoli = totaleCostoArticoli;
     }
+
 }

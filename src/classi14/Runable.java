@@ -25,11 +25,14 @@ public class Runable {
 
 	Cliente cUno = new Cliente(12335, "banana", "pompelmo", "frutta@gmail.com", "12-12-23");
 
-	Articolo aUno = new Articolo();
-	aUno.setCodiceArticolo(122222);
-	aUno.setDescrizioneArticolo("spazzola");
-	aUno.setPrezzo(12.25);
-	Articolo.setNumeroPezziInMagazzino(55);
+	Articolo aUno = new Articolo(122222, "spazzola", 12.25, 55);
+
+	/* Carrello carUno = new Carrello(); */
+	/*
+	 * carUno.setCliente(cUno.getCognome());
+	 */ /* carUno.setElencoArticoli(aUno); */
+
+	/* System.out.println(carUno.getElencoArticoli()); */
 
 	System.out.println("i pezzi sono: " + aUno.getNumeroPezziInMagazzino() + " il codice articolo è: "
 		+ aUno.getCodiceArticolo() + " l'articolo in questione è " + aUno.getDescrizioneArticolo()
@@ -37,6 +40,7 @@ public class Runable {
 	System.out.println("il codice cliente è: " + cUno.getCodiceCliente() + " il nome è: " + cUno.getNome()
 		+ " il cognome è: " + cUno.getCognome() + " la email è:" + cUno.getEmail() + " la datas è: "
 		+ cUno.getDataIscrizione());
+
     } // PARENTESI MAIN
 
 } // PARENTESI CLASSE

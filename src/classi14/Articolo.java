@@ -6,7 +6,12 @@ public class Articolo {
     double prezzo;
     private static int numeroPezziInMagazzino;
 
-    public Articolo() {
+    public Articolo(int codiceArticolo, String descrizioneArticolo, double prezzo, int numeroPezziInMagazzino) {
+	this.codiceArticolo = codiceArticolo;
+	this.descrizioneArticolo = descrizioneArticolo;
+	this.prezzo = prezzo;
+	this.numeroPezziInMagazzino = numeroPezziInMagazzino;
+
     };
 
     public long getCodiceArticolo() {
